@@ -37,40 +37,6 @@ export const navGroups: NavGroup[] = [
 		],
 	},
 	{
-		label: "Elements",
-		items: [
-			{
-				title: "Forms",
-				url: "#",
-				icon: "forms",
-				isActive: true,
-				items: [
-					{
-						title: "Basic Form",
-						url: "/dashboard/forms/basic",
-						icon: "forms",
-						shortcut: ["f", "f"],
-					},
-					{
-						title: "Multi-Step Form",
-						url: "/dashboard/forms/multi-step",
-						icon: "forms",
-					},
-					{
-						title: "Sheet & Dialog",
-						url: "/dashboard/forms/sheet-form",
-						icon: "forms",
-					},
-					{
-						title: "Advanced Patterns",
-						url: "/dashboard/forms/advanced",
-						icon: "forms",
-					},
-				],
-			},
-		],
-	},
-	{
 		label: "",
 		items: [
 			{
