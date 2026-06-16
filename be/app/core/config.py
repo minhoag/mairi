@@ -41,8 +41,8 @@ class Settings(BaseSettings):
 
     PROJECT_NAME: str
     SENTRY_DSN: HttpUrl | None = None
-    POSTGRES_SERVER: str
-    POSTGRES_PORT: int
+    APP_HOST: str  # this is because docker service name is used as host
+    DB_HOST_PORT: int  # this is because docker service name is used as host
     POSTGRES_USER: str
     POSTGRES_PASSWORD: str
     POSTGRES_DB: str
@@ -54,8 +54,8 @@ class Settings(BaseSettings):
             scheme="postgresql+psycopg",
             username=self.POSTGRES_USER,
             password=self.POSTGRES_PASSWORD,
-            host=self.POSTGRES_SERVER,
-            port=self.POSTGRES_PORT,
+            host=self.APP_HOST,  # this is because docker service name is used as host
+            port=self.DB_HOST_PORT,  # this is because docker service name is used as host
             path=self.POSTGRES_DB,
         )
 
