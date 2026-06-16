@@ -6,7 +6,16 @@ import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
-	server: { port: 3000 },
+	server: {
+		host: "0.0.0.0",
+		port: 3000,
+		proxy: {
+			"/api": {
+				target: "http://be:3333",
+				changeOrigin: true,
+			},
+		},
+	},
 	plugins: [
 		tsconfigPaths(),
 		tailwindcss(),

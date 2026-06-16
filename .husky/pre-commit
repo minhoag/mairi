@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+
+bun x lint-staged
+git update-index --again

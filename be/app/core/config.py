@@ -9,6 +9,7 @@ from pydantic import (
 )
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
+
 def parse_cors(v: Any) -> list[str] | str:
     if isinstance(v, str) and not v.startswith("["):
         return [i.strip() for i in v.split(",") if i.strip()]
@@ -16,9 +17,10 @@ def parse_cors(v: Any) -> list[str] | str:
         return v
     raise ValueError(v)
 
+
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
-        # Use top level .env file (one level above ./backend/)
+        # Use top level .env file (one level above ./be/)
         env_file="../.env",
         env_ignore_empty=True,
         extra="ignore",
@@ -29,16 +31,12 @@ class Settings(BaseSettings):
     TTL_TOKEN: int = 60 * 24 * 7
     FRONTEND: str
     ENVIRONMENT: Literal["local", "staging", "production"]
-    BACKEND: Annotated[
-        list[AnyUrl] | str, BeforeValidator(parse_cors)
-    ] = []
+    BACKEND: Annotated[list[AnyUrl] | str, BeforeValidator(parse_cors)] = []
 
     @computed_field  # type: ignore[prop-decorator]
     @property
     def all_cors_origins(self) -> list[str]:
-        return [str(origin).rstrip("/") for origin in self.BACKEND] + [
-            self.FRONTEND
-        ]
+        return [str(origin).rstrip("/") for origin in self.BACKEND] + [self.FRONTEND]
 
     PROJECT_NAME: str
     SENTRY_DSN: HttpUrl | None = None
@@ -59,5 +57,6 @@ class Settings(BaseSettings):
             port=self.POSTGRES_PORT,
             path=self.POSTGRES_DB,
         )
+
 
 settings = Settings()  # type: ignore
