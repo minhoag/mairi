@@ -5,8 +5,8 @@ from sqlmodel import Session, create_engine
 from app.core.config import settings
 
 engine = create_engine(
-	str(settings.SQLALCHEMY_DATABASE_URI),
-	poolclass=QueuePool,
+    str(settings.SQLALCHEMY_DATABASE_URI),
+    poolclass=QueuePool,
     pool_size=10,
     max_overflow=20,
     pool_recycle=1800,
@@ -15,6 +15,7 @@ engine = create_engine(
 )
 Base = declarative_base()
 # Don't call create_all here - use Alembic migrations instead
+
 
 def get_db():
     with Session(engine) as session:

@@ -4,6 +4,7 @@ node_modules
 .pnp.js
 .codegraph
 *.lock
+.ruff_cache
 # Build outputs
 dist
 build

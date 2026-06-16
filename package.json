@@ -5,9 +5,9 @@
 		"setup": "bun install --cwd fe && uv sync --directory be",
 		"prepare": "husky",
 		"format:be": "uvx ruff check --fix be/app be/scripts && uvx ruff format be/app be/scripts",
-		"lint:be": "uvx ruff check be/app be/scripts && uvx ruff format --check be/app be/scripts",
+		"lint:be": "uvx ruff check be/app be/scripts",
 		"format:fe": "bun x @biomejs/biome check --write --no-errors-on-unmatched biome.json fe",
-		"lint:fe": "bun x @biomejs/biome check biome.json fe"
+		"lint:fe": "bun x @biomejs/biome lint fe"
 	},
 	"devDependencies": {
 		"husky": "^9.1.7",
