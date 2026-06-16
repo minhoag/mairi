@@ -1,21 +1,11 @@
 import secrets
-from typing import Annotated, Any, Literal
+from typing import Literal
 from pydantic import (
-    AnyUrl,
-    BeforeValidator,
     HttpUrl,
     PostgresDsn,
     computed_field,
 )
 from pydantic_settings import BaseSettings, SettingsConfigDict
-
-
-def parse_cors(v: Any) -> list[str] | str:
-    if isinstance(v, str) and not v.startswith("["):
-        return [i.strip() for i in v.split(",") if i.strip()]
-    elif isinstance(v, list | str):
-        return v
-    raise ValueError(v)
 
 
 class Settings(BaseSettings):
@@ -29,9 +19,20 @@ class Settings(BaseSettings):
     SECRET: str = secrets.token_urlsafe(32)
     # 60 * 24 * 7 = 168 = 7 days
     TTL_TOKEN: int = 60 * 24 * 7
-    FRONTEND: str
     ENVIRONMENT: Literal["local", "staging", "production"]
-    BACKEND: Annotated[list[AnyUrl] | str, BeforeValidator(parse_cors)] = []
+    APP_HOST: str
+    FE_HOST_PORT: int
+    BE_HOST_PORT: int
+
+    @computed_field  # type: ignore[prop-decorator]
+    @property
+    def FRONTEND(self) -> str:
+        return f"http://{self.APP_HOST}:{self.FE_HOST_PORT}"
+
+    @computed_field  # type: ignore[prop-decorator]
+    @property
+    def BACKEND(self) -> list[str]:
+        return [f"http://{self.APP_HOST}:{self.BE_HOST_PORT}"]
 
     @computed_field  # type: ignore[prop-decorator]
     @property
