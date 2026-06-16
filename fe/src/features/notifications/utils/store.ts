@@ -24,82 +24,37 @@ type NotificationState = {
 };
 
 const mockNotifications: Notification[] = [
+	// MOCKS — device upload failures from log
 	{
-		id: "1",
-		title: "New team member joined",
-		body: "Sarah Connor has joined the Engineering workspace.",
+		id: "dev-fail-1",
+		title: "Upload failed — RPi-C3D4",
+		body: "Device RPi-C3D4 failed to push road data at 2026-06-17 13:45. Retried successfully at 13:47.",
 		status: "unread",
-		createdAt: new Date(Date.now() - 1000 * 60 * 5).toISOString(),
-		actions: [
-			{
-				id: "view",
-				label: "View workspace",
-				type: "redirect",
-				style: "primary",
-			},
-		],
+		createdAt: new Date("2026-06-17T13:45:00").toISOString(),
 	},
 	{
-		id: "2",
-		title: "New product added",
-		body: 'A new product "Dashboard Pro" has been added to the catalog.',
+		id: "dev-fail-2",
+		title: "Upload failed — RPi-E5F6",
+		body: "Device RPi-E5F6 failed to push road data at 2026-06-17 13:27. Retried successfully at 13:29.",
 		status: "unread",
-		createdAt: new Date(Date.now() - 1000 * 60 * 30).toISOString(),
-		actions: [
-			{
-				id: "view-product",
-				label: "View products",
-				type: "redirect",
-				style: "primary",
-			},
-		],
+		createdAt: new Date("2026-06-17T13:27:00").toISOString(),
 	},
 	{
-		id: "3",
-		title: "Billing cycle updated",
-		body: "Your Pro plan has been renewed. Next invoice on April 24, 2026.",
+		id: "dev-fail-3",
+		title: "Upload failed — RPi-G7H8",
+		body: "Device RPi-G7H8 failed to push road data at 2026-06-17 13:07. Retried successfully at 13:09.",
 		status: "unread",
-		createdAt: new Date(Date.now() - 1000 * 60 * 60 * 2).toISOString(),
-		actions: [
-			{
-				id: "billing",
-				label: "View billing",
-				type: "redirect",
-				style: "primary",
-			},
-		],
+		createdAt: new Date("2026-06-17T13:07:00").toISOString(),
 	},
 	{
-		id: "4",
-		title: "Task assigned to you",
-		body: 'You have been assigned "Update dashboard analytics" on the Kanban board.',
-		status: "read",
-		createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24).toISOString(),
-		actions: [
-			{
-				id: "open",
-				label: "Open kanban",
-				type: "redirect",
-				style: "primary",
-			},
-		],
-	},
-	{
-		id: "5",
-		title: "New message from Alex",
-		body: 'Alex sent you a message: "Hey, can we sync on the overview dashboard?"',
-		status: "read",
-		createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 3).toISOString(),
-		actions: [
-			{
-				id: "open-chat",
-				label: "Open chat",
-				type: "redirect",
-				style: "primary",
-			},
-		],
+		id: "dev-fail-4",
+		title: "Upload failed — RPi-A1B2",
+		body: "Device RPi-A1B2 failed to push road data at 2026-06-17 12:49. Retried successfully at 12:51.",
+		status: "unread",
+		createdAt: new Date("2026-06-17T12:49:00").toISOString(),
 	},
 ];
+// END MOCKS
 
 export const useNotificationStore = create<NotificationState>()(
 	// To enable persistence across refreshes, uncomment the persist wrapper below:
