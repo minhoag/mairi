@@ -3,13 +3,13 @@ from datetime import datetime, timezone
 from sqlmodel import select
 
 from app.models import ClaimCode, Device, DevicePublic
-from wrapper.response import (
+from app.wrapper.response import (
     ConflictResponse,
     ForbiddenResponse,
     NotFoundResponse,
     SuccessResponse,
 )
-from wrapper.service import Service
+from app.wrapper.service import Service
 
 
 class DeviceService(Service):

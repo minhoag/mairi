@@ -1,5 +1,6 @@
 import secrets
 from typing import Literal
+
 from pydantic import (
     HttpUrl,
     PostgresDsn,
@@ -10,17 +11,14 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
-        # Use top level .env file (one level above ./be/)
-        env_file="../.env",
-        env_ignore_empty=True,
-        extra="ignore",
+        extra="ignore", env_file=(".env", "../.env"), env_file_encoding="utf-8"
     )
+    # for debug
     VERSION: str
     SECRET: str = secrets.token_urlsafe(32)
     # 60 * 24 * 7 = 168 = 7 days
     TTL_TOKEN: int = 60 * 24 * 7
     ENVIRONMENT: Literal["local", "staging", "production"]
-    APP_HOST: str
     FE_HOST_PORT: int
     BE_HOST_PORT: int
 
@@ -41,8 +39,10 @@ class Settings(BaseSettings):
 
     PROJECT_NAME: str
     SENTRY_DSN: HttpUrl | None = None
-    APP_HOST: str  # this is because docker service name is used as host
-    DB_HOST_PORT: int  # this is because docker service name is used as host
+    APP_HOST: str
+    DB_HOST_PORT: int
+    POSTGRES_SERVER: str
+    POSTGRES_PORT: int
     POSTGRES_USER: str
     POSTGRES_PASSWORD: str
     POSTGRES_DB: str
@@ -54,8 +54,8 @@ class Settings(BaseSettings):
             scheme="postgresql+psycopg",
             username=self.POSTGRES_USER,
             password=self.POSTGRES_PASSWORD,
-            host=self.APP_HOST,  # this is because docker service name is used as host
-            port=self.DB_HOST_PORT,  # this is because docker service name is used as host
+            host=self.APP_HOST,
+            port=self.DB_HOST_PORT,
             path=self.POSTGRES_DB,
         )
 
