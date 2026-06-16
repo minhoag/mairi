@@ -1,0 +1,11 @@
+[project]
+name = "mairi-be"
+version = "0.1.0"
+description = "Measurement and Analysis of International Roughness Index"
+readme = "README.md"
+requires-python = "==3.12.*"
+dependencies = [
+    "alembic==1.18.4",
+    "fastapi[standard]==0.137.1",
+    "sqlmodel==0.0.38",
+]
