@@ -16,7 +16,6 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
-
   be:
     build:
       context: ./be
@@ -45,7 +44,6 @@ services:
       - "${BE_HOST_PORT}:3333"
     volumes:
       - ./be:/app
-
   fe:
     build:
       context: ./fe
