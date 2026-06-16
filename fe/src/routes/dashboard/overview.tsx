@@ -1,18 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Icons } from "@/components/icons.tsx";
 import PageContainer from "@/components/layout/page-container.tsx";
-import { Badge } from "@/components/ui/badge.tsx";
-import {
-	Card,
-	CardAction,
-	CardDescription,
-	CardFooter,
-	CardHeader,
-	CardTitle,
-} from "@/components/ui/card.tsx";
 import { AreaGraph } from "@/features/overview/components/area-graph.tsx";
-import { BarGraph } from "@/features/overview/components/bar-graph.tsx";
-import { PieGraph } from "@/features/overview/components/pie-graph.tsx";
 import { RecentSales } from "@/features/overview/components/recent-sales.tsx";
 
 export const Route = createFileRoute("/dashboard/overview")({
