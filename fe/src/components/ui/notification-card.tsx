@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils.ts";
 
 export type NotificationStatus = "unread" | "read" | "archived";
 export type ActionType = "redirect" | "api_call" | "workflow" | "modal";
-export type ActionStyle = "primary" | "danger" | "default";
+export type ActionStyle = "success" | "destructive" | "primary";
 
 export interface NotificationAction {
 	id: string;
