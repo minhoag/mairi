@@ -1,15 +1,15 @@
 import { Link, useRouter } from "@tanstack/react-router";
-import { Icons } from "@/components/icons";
-import { Button } from "@/components/ui/button";
-import { NotificationCard } from "@/components/ui/notification-card";
+import { Icons } from "@/components/icons.tsx";
+import { Button } from "@/components/ui/button.tsx";
+import { NotificationCard } from "@/components/ui/notification-card.tsx";
 import {
 	Popover,
 	PopoverContent,
 	PopoverTrigger,
-} from "@/components/ui/popover";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { Separator } from "@/components/ui/separator";
-import { useNotificationStore } from "../utils/store";
+} from "@/components/ui/popover.tsx";
+import { ScrollArea } from "@/components/ui/scroll-area.tsx";
+import { Separator } from "@/components/ui/separator.tsx";
+import { useNotificationStore } from "../utils/store.ts";
 
 const MAX_VISIBLE = 5;
 

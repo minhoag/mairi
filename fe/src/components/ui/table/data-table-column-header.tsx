@@ -5,15 +5,15 @@ import {
 	Cross2Icon,
 } from "@radix-ui/react-icons";
 import type { Column } from "@tanstack/react-table";
-import { Icons } from "@/components/icons";
+import { Icons } from "@/components/icons.tsx";
 import {
 	DropdownMenu,
 	DropdownMenuCheckboxItem,
 	DropdownMenuContent,
 	DropdownMenuItem,
 	DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { cn } from "@/lib/utils";
+} from "@/components/ui/dropdown-menu.tsx";
+import { cn } from "@/lib/utils.ts";
 
 interface DataTableColumnHeaderProps<TData, TValue>
 	extends React.ComponentProps<typeof DropdownMenuTrigger> {

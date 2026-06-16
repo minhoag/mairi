@@ -1,7 +1,7 @@
 import { createRouter as createTanStackRouter } from "@tanstack/react-router";
 import { routerWithQueryClient } from "@tanstack/react-router-with-query";
-import { getQueryClient } from "@/lib/query-client";
-import { routeTree } from "./routeTree.gen";
+import { getQueryClient } from "@/lib/query-client.ts";
+import { routeTree } from "./routeTree.gen.ts";
 
 export const getRouter = createRouter;
 

@@ -1,14 +1,14 @@
 import { useTheme } from "next-themes";
 import * as React from "react";
-import { Icons } from "@/components/icons";
+import { Icons } from "@/components/icons.tsx";
 
-import { Button } from "@/components/ui/button";
-import { Kbd } from "@/components/ui/kbd";
+import { Button } from "@/components/ui/button.tsx";
+import { Kbd } from "@/components/ui/kbd.tsx";
 import {
 	Tooltip,
 	TooltipContent,
 	TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from "@/components/ui/tooltip.tsx";
 
 export function ThemeModeToggle() {
 	const { setTheme, resolvedTheme } = useTheme();

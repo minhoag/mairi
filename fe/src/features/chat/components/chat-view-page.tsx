@@ -1,4 +1,4 @@
-import { Messenger } from "./messenger";
+import { Messenger } from "./messenger.tsx";
 
 export default function ChatViewPage() {
 	return (

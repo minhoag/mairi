@@ -1,10 +1,10 @@
 import { createFileRoute, Outlet } from "@tanstack/react-router";
-import KBar from "@/components/kbar";
-import AppSidebar from "@/components/layout/app-sidebar";
-import Header from "@/components/layout/header";
-import { InfoSidebar } from "@/components/layout/info-sidebar";
-import { InfobarProvider } from "@/components/ui/infobar";
-import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
+import KBar from "@/components/kbar/index.tsx";
+import AppSidebar from "@/components/layout/app-sidebar.tsx";
+import Header from "@/components/layout/header.tsx";
+import { InfoSidebar } from "@/components/layout/info-sidebar.tsx";
+import { InfobarProvider } from "@/components/ui/infobar.tsx";
+import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar.tsx";
 
 export const Route = createFileRoute("/dashboard")({
 	head: () => ({

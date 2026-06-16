@@ -3,13 +3,13 @@ import { AnimatePresence, motion } from "motion/react";
 import type * as React from "react";
 import { toast } from "sonner";
 import * as z from "zod";
-import { Icons } from "@/components/icons";
-import { Button } from "@/components/ui/button";
-import { FieldDescription } from "@/components/ui/field";
-import { Progress } from "@/components/ui/progress";
-import { Separator } from "@/components/ui/separator";
-import { useAppForm, withFieldGroup } from "@/components/ui/tanstack-form";
-import { useFormStepper } from "@/hooks/use-stepper";
+import { Icons } from "@/components/icons.tsx";
+import { Button } from "@/components/ui/button.tsx";
+import { FieldDescription } from "@/components/ui/field.tsx";
+import { Progress } from "@/components/ui/progress.tsx";
+import { Separator } from "@/components/ui/separator.tsx";
+import { useAppForm, withFieldGroup } from "@/components/ui/tanstack-form.tsx";
+import { useFormStepper } from "@/hooks/use-stepper.tsx";
 
 // --- Schema ---
 

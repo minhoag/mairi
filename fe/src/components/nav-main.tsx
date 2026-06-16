@@ -1,9 +1,9 @@
-import { type Icon, Icons } from "@/components/icons";
+import { type Icon, Icons } from "@/components/icons.tsx";
 import {
 	Collapsible,
 	CollapsibleContent,
 	CollapsibleTrigger,
-} from "@/components/ui/collapsible";
+} from "@/components/ui/collapsible.tsx";
 import {
 	SidebarGroup,
 	SidebarGroupContent,
@@ -14,7 +14,7 @@ import {
 	SidebarMenuSub,
 	SidebarMenuSubButton,
 	SidebarMenuSubItem,
-} from "@/components/ui/sidebar";
+} from "@/components/ui/sidebar.tsx";
 
 export function NavMain({
 	items,

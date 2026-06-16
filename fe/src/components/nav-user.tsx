@@ -1,6 +1,10 @@
-import { Icons } from "@/components/icons";
+import { Icons } from "@/components/icons.tsx";
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import {
+	Avatar,
+	AvatarFallback,
+	AvatarImage,
+} from "@/components/ui/avatar.tsx";
 import {
 	DropdownMenu,
 	DropdownMenuContent,
@@ -9,13 +13,13 @@ import {
 	DropdownMenuLabel,
 	DropdownMenuSeparator,
 	DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "@/components/ui/dropdown-menu.tsx";
 import {
 	SidebarMenu,
 	SidebarMenuButton,
 	SidebarMenuItem,
 	useSidebar,
-} from "@/components/ui/sidebar";
+} from "@/components/ui/sidebar.tsx";
 
 export function NavUser({
 	user,

@@ -1,9 +1,9 @@
 import { type FormEvent, useRef } from "react";
-import { Icons } from "@/components/icons";
-import { Button } from "@/components/ui/button";
-import { FilePreview } from "@/components/ui/file-preview";
-import { Textarea } from "@/components/ui/textarea";
-import type { Attachment } from "../utils/types";
+import { Icons } from "@/components/icons.tsx";
+import { Button } from "@/components/ui/button.tsx";
+import { FilePreview } from "@/components/ui/file-preview.tsx";
+import { Textarea } from "@/components/ui/textarea.tsx";
+import type { Attachment } from "../utils/types.ts";
 
 interface MessageComposerProps {
 	draft: string;
@@ -70,7 +70,7 @@ export function MessageComposer({
 						}
 						rows={2}
 						className="text-foreground placeholder:text-muted-foreground/70 min-h-[3rem] w-full resize-none border-none bg-transparent text-xs focus-visible:ring-0 focus-visible:outline-none sm:min-h-[4rem] sm:text-sm"
-						aria-label={"Message " + contactName}
+						aria-label={`Message ${contactName}`}
 					/>
 					<div className="mt-2 flex flex-wrap gap-1.5 sm:mt-3 sm:gap-2">
 						{quickReplies.map((reply) => (

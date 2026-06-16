@@ -1,8 +1,8 @@
 import { motion, useReducedMotion } from "motion/react";
-import { Icons } from "@/components/icons";
-import { FilePreview } from "@/components/ui/file-preview";
-import { cn } from "@/lib/utils";
-import type { Message } from "../utils/types";
+import { Icons } from "@/components/icons.tsx";
+import { FilePreview } from "@/components/ui/file-preview.tsx";
+import { cn } from "@/lib/utils.ts";
+import type { Message } from "../utils/types.ts";
 
 interface MessageBubbleProps {
 	message: Message;
@@ -22,7 +22,7 @@ export function MessageBubble({ message }: MessageBubbleProps) {
 			transition={{ duration: 0.28, ease: "easeOut" }}
 			className="flex flex-col gap-1"
 			role="group"
-			aria-label={message.author + " at " + message.timestamp}
+			aria-label={`${message.author} at ${message.timestamp}`}
 		>
 			<div
 				className={cn(

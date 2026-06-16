@@ -1,6 +1,6 @@
 import { useKBar } from "kbar";
-import { Icons } from "@/components/icons";
-import { Button } from "./ui/button";
+import { Icons } from "@/components/icons.tsx";
+import { Button } from "./ui/button.tsx";
 
 export default function SearchInput() {
 	const { query } = useKBar();

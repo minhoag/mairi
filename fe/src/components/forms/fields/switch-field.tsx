@@ -1,12 +1,12 @@
 import { useStore } from "@tanstack/react-form";
-import { FieldDescription, FieldLabel } from "@/components/ui/field";
+import { FieldDescription, FieldLabel } from "@/components/ui/field.tsx";
 import {
 	createFormField,
 	FormField,
 	FormFieldSet,
 	useFieldContext,
-} from "@/components/ui/form-context";
-import { Switch } from "@/components/ui/switch";
+} from "@/components/ui/form-context.tsx";
+import { Switch } from "@/components/ui/switch.tsx";
 
 interface SwitchFieldProps {
 	label: string;

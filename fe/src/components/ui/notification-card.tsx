@@ -1,6 +1,6 @@
 import type { FC } from "react";
-import { Icons } from "@/components/icons";
-import { cn } from "@/lib/utils";
+import { Icons } from "@/components/icons.tsx";
+import { cn } from "@/lib/utils.ts";
 
 export type NotificationStatus = "unread" | "read" | "archived";
 export type ActionType = "redirect" | "api_call" | "workflow" | "modal";

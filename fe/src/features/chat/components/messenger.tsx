@@ -6,11 +6,11 @@ import {
 	useRef,
 	useState,
 } from "react";
-import { useChatStore } from "../utils/store";
-import type { Attachment, Message } from "../utils/types";
-import { ChatArea } from "./chat-area";
-import { ConversationList } from "./conversation-list";
-import { ConversationSelect } from "./conversation-select";
+import { useChatStore } from "../utils/store.ts";
+import type { Attachment, Message } from "../utils/types.ts";
+import { ChatArea } from "./chat-area.tsx";
+import { ConversationList } from "./conversation-list.tsx";
+import { ConversationSelect } from "./conversation-select.tsx";
 
 export function Messenger() {
 	const {
@@ -46,7 +46,7 @@ export function Messenger() {
 
 	const handleAddAttachments = useCallback((files: FileList) => {
 		const newAttachments: Attachment[] = Array.from(files).map((file) => ({
-			id: "file-" + Date.now() + "-" + Math.random().toString(36).slice(2, 7),
+			id: `file-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
 			name: file.name,
 			size: file.size,
 			type: file.type,
@@ -81,7 +81,7 @@ export function Messenger() {
 					minute: "2-digit",
 				});
 				const incoming: Message = {
-					id: "incoming-" + Date.now().toString(),
+					id: `incoming-${Date.now().toString()}`,
 					sender: "contact",
 					author: active.name,
 					text: nextReply,

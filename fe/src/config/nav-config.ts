@@ -1,4 +1,4 @@
-import type { NavGroup } from "@/types";
+import type { NavGroup } from "@/types/index.ts";
 
 /**
  * Navigation configuration

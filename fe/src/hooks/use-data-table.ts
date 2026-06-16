@@ -20,9 +20,9 @@ import {
 } from "@tanstack/react-table";
 import * as React from "react";
 
-import { useDebouncedCallback } from "@/hooks/use-debounced-callback";
-import { parseSortingState, serializeSortingState } from "@/lib/parsers";
-import type { ExtendedColumnSort } from "@/types/data-table";
+import { useDebouncedCallback } from "@/hooks/use-debounced-callback.ts";
+import { parseSortingState, serializeSortingState } from "@/lib/parsers.ts";
+import type { ExtendedColumnSort } from "@/types/data-table.ts";
 
 const ARRAY_SEPARATOR = ",";
 const DEBOUNCE_MS = 300;

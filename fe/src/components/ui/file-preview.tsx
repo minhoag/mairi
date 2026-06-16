@@ -1,6 +1,6 @@
 import type { FC } from "react";
-import { Icons } from "@/components/icons";
-import { cn } from "@/lib/utils";
+import { Icons } from "@/components/icons.tsx";
+import { cn } from "@/lib/utils.ts";
 
 export interface UploadedFile {
 	id: string;

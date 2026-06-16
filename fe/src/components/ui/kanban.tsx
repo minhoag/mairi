@@ -43,8 +43,8 @@ import { Slot as SlotPrimitive } from "radix-ui";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import { useComposedRefs } from "@/lib/compose-refs";
-import { cn } from "@/lib/utils";
+import { useComposedRefs } from "@/lib/compose-refs.ts";
+import { cn } from "@/lib/utils.ts";
 
 const directions: string[] = [
 	KeyboardCode.Down,

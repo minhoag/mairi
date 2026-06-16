@@ -20,10 +20,8 @@
 @import "@fontsource-variable/noto-sans-mono";
 @import "@fontsource/space-mono/400.css";
 @import "@fontsource/space-mono/700.css";
-
-@custom-variant dark (&:is(.dark *));
-
 @import "./theme.css";
+@custom-variant dark (&:is(.dark *));
 
 @layer base {
 	* {

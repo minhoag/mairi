@@ -1,19 +1,19 @@
 import { LabelList, Pie, PieChart } from "recharts";
-import { Icons } from "@/components/icons";
-import { Badge } from "@/components/ui/badge";
+import { Icons } from "@/components/icons.tsx";
+import { Badge } from "@/components/ui/badge.tsx";
 import {
 	Card,
 	CardContent,
 	CardDescription,
 	CardHeader,
 	CardTitle,
-} from "@/components/ui/card";
+} from "@/components/ui/card.tsx";
 import {
 	type ChartConfig,
 	ChartContainer,
 	ChartTooltip,
 	ChartTooltipContent,
-} from "@/components/ui/chart";
+} from "@/components/ui/chart.tsx";
 
 const chartData = [
 	{ browser: "chrome", visitors: 275, fill: "var(--color-chrome)" },

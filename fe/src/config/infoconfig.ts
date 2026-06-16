@@ -1,4 +1,4 @@
-import type { InfobarContent } from "@/components/ui/infobar";
+import type { InfobarContent } from "@/components/ui/infobar.tsx";
 
 export const productInfoContent: InfobarContent = {
 	title: "Product Management",

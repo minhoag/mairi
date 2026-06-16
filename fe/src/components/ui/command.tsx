@@ -1,14 +1,14 @@
 import { Command as CommandPrimitive } from "cmdk";
 import type * as React from "react";
-import { Icons } from "@/components/icons";
+import { Icons } from "@/components/icons.tsx";
 import {
 	Dialog,
 	DialogContent,
 	DialogDescription,
 	DialogHeader,
 	DialogTitle,
-} from "@/components/ui/dialog";
-import { cn } from "@/lib/utils";
+} from "@/components/ui/dialog.tsx";
+import { cn } from "@/lib/utils.ts";
 
 function Command({
 	className,

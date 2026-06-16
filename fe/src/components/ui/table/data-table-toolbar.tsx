@@ -1,13 +1,13 @@
 import { Cross2Icon } from "@radix-ui/react-icons";
 import type { Column, Table } from "@tanstack/react-table";
 import * as React from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { DataTableDateFilter } from "@/components/ui/table/data-table-date-filter";
-import { DataTableFacetedFilter } from "@/components/ui/table/data-table-faceted-filter";
-import { DataTableSliderFilter } from "@/components/ui/table/data-table-slider-filter";
-import { DataTableViewOptions } from "@/components/ui/table/data-table-view-options";
-import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button.tsx";
+import { Input } from "@/components/ui/input.tsx";
+import { DataTableDateFilter } from "@/components/ui/table/data-table-date-filter.tsx";
+import { DataTableFacetedFilter } from "@/components/ui/table/data-table-faceted-filter.tsx";
+import { DataTableSliderFilter } from "@/components/ui/table/data-table-slider-filter.tsx";
+import { DataTableViewOptions } from "@/components/ui/table/data-table-view-options.tsx";
+import { cn } from "@/lib/utils.ts";
 
 interface DataTableToolbarProps<TData> extends React.ComponentProps<"div"> {
 	table: Table<TData>;

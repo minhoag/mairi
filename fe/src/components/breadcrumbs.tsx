@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { Icons } from "@/components/icons";
+import { Icons } from "@/components/icons.tsx";
 import {
 	Breadcrumb,
 	BreadcrumbItem,
@@ -7,8 +7,8 @@ import {
 	BreadcrumbList,
 	BreadcrumbPage,
 	BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { useBreadcrumbs } from "@/hooks/use-breadcrumbs";
+} from "@/components/ui/breadcrumb.tsx";
+import { useBreadcrumbs } from "@/hooks/use-breadcrumbs.tsx";
 
 export function Breadcrumbs() {
 	const items = useBreadcrumbs();

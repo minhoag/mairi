@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { toast } from "sonner";
 import * as z from "zod";
-import { Icons } from "@/components/icons";
-import { Button } from "@/components/ui/button";
+import { Icons } from "@/components/icons.tsx";
+import { Button } from "@/components/ui/button.tsx";
 import {
 	Card,
 	CardContent,
 	CardDescription,
 	CardHeader,
 	CardTitle,
-} from "@/components/ui/card";
+} from "@/components/ui/card.tsx";
 import {
 	Dialog,
 	DialogContent,
@@ -18,7 +18,7 @@ import {
 	DialogHeader,
 	DialogTitle,
 	DialogTrigger,
-} from "@/components/ui/dialog";
+} from "@/components/ui/dialog.tsx";
 import {
 	Sheet,
 	SheetContent,
@@ -27,8 +27,8 @@ import {
 	SheetHeader,
 	SheetTitle,
 	SheetTrigger,
-} from "@/components/ui/sheet";
-import { useAppForm, useFormFields } from "@/components/ui/tanstack-form";
+} from "@/components/ui/sheet.tsx";
+import { useAppForm, useFormFields } from "@/components/ui/tanstack-form.tsx";
 
 // ---------------------------------------------------------------------------
 // Types

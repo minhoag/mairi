@@ -6,8 +6,8 @@ import {
 	Scripts,
 } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
-import ThemeProvider from "@/components/themes/theme-provider";
-import { Toaster } from "@/components/ui/sonner";
+import ThemeProvider from "@/components/themes/theme-provider.tsx";
+import { Toaster } from "@/components/ui/sonner.tsx";
 
 import appCss from "@/styles/globals.css?url";
 

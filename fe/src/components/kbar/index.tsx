@@ -7,10 +7,10 @@ import {
 	KBarSearch,
 } from "kbar";
 import { useMemo } from "react";
-import { navGroups } from "@/config/nav-config";
-import { useFilteredNavGroups } from "@/hooks/use-nav";
-import RenderResults from "./render-result";
-import useThemeSwitching from "./use-theme-switching";
+import { navGroups } from "@/config/nav-config.ts";
+import { useFilteredNavGroups } from "@/hooks/use-nav.ts";
+import RenderResults from "./render-result.tsx";
+import useThemeSwitching from "./use-theme-switching.tsx";
 
 export default function KBar({ children }: { children: React.ReactNode }) {
 	const router = useRouter();

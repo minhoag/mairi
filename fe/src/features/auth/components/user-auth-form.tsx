@@ -1,10 +1,10 @@
 import { useTransition } from "react";
 import { toast } from "sonner";
 import * as z from "zod";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { useAppForm } from "@/components/ui/tanstack-form";
-import GithubSignInButton from "./github-auth-button";
+import { Button } from "@/components/ui/button.tsx";
+import { Input } from "@/components/ui/input.tsx";
+import { useAppForm } from "@/components/ui/tanstack-form.tsx";
+import GithubSignInButton from "./github-auth-button.tsx";
 
 const formSchema = z.object({
 	email: z.string().email({ message: "Enter a valid email address" }),

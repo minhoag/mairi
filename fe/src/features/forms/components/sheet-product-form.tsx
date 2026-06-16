@@ -1,15 +1,15 @@
 import { useState } from "react";
 import * as z from "zod";
-import { Icons } from "@/components/icons";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Icons } from "@/components/icons.tsx";
+import { Button } from "@/components/ui/button.tsx";
+import { Input } from "@/components/ui/input.tsx";
 import {
 	Select,
 	SelectContent,
 	SelectItem,
 	SelectTrigger,
 	SelectValue,
-} from "@/components/ui/select";
+} from "@/components/ui/select.tsx";
 import {
 	Sheet,
 	SheetContent,
@@ -18,9 +18,9 @@ import {
 	SheetHeader,
 	SheetTitle,
 	SheetTrigger,
-} from "@/components/ui/sheet";
-import { useAppForm } from "@/components/ui/tanstack-form";
-import { Textarea } from "@/components/ui/textarea";
+} from "@/components/ui/sheet.tsx";
+import { useAppForm } from "@/components/ui/tanstack-form.tsx";
+import { Textarea } from "@/components/ui/textarea.tsx";
 
 const productSchema = z.object({
 	name: z.string().min(2, "Product name must be at least 2 characters"),

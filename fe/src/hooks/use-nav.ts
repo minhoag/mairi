@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import type { NavGroup, NavItem } from "@/types";
+import type { NavGroup, NavItem } from "@/types/index.ts";
 
 /**
  * Hook to filter navigation items

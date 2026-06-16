@@ -1,13 +1,13 @@
 import { useStore } from "@tanstack/react-form";
-import { FieldDescription, FieldLabel } from "@/components/ui/field";
+import { FieldDescription, FieldLabel } from "@/components/ui/field.tsx";
 import {
 	createFormField,
 	FormFieldError,
 	FormFieldSet,
 	useFieldContext,
-} from "@/components/ui/form-context";
-import { Label } from "@/components/ui/label";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+} from "@/components/ui/form-context.tsx";
+import { Label } from "@/components/ui/label.tsx";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group.tsx";
 
 type Option = { value: string; label: string };
 

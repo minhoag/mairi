@@ -4,7 +4,7 @@ import {
 	Collapsible,
 	CollapsibleContent,
 	CollapsibleTrigger,
-} from "@/components/ui/collapsible";
+} from "@/components/ui/collapsible.tsx";
 import {
 	DropdownMenu,
 	DropdownMenuContent,
@@ -12,7 +12,7 @@ import {
 	DropdownMenuItem,
 	DropdownMenuSeparator,
 	DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "@/components/ui/dropdown-menu.tsx";
 import {
 	Sidebar,
 	SidebarContent,
@@ -27,11 +27,11 @@ import {
 	SidebarMenuSubButton,
 	SidebarMenuSubItem,
 	SidebarRail,
-} from "@/components/ui/sidebar";
-import { navGroups } from "@/config/nav-config";
-import { useMediaQuery } from "@/hooks/use-media-query";
-import { useFilteredNavGroups } from "@/hooks/use-nav";
-import { Icons } from "../icons";
+} from "@/components/ui/sidebar.tsx";
+import { navGroups } from "@/config/nav-config.ts";
+import { useMediaQuery } from "@/hooks/use-media-query.ts";
+import { useFilteredNavGroups } from "@/hooks/use-nav.ts";
+import { Icons } from "../icons.tsx";
 
 export default function AppSidebar() {
 	const { pathname } = useLocation();

@@ -1,11 +1,11 @@
 import { motion } from "motion/react";
 import { useMemo, useState } from "react";
-import { Icons } from "@/components/icons";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
-import { cn } from "@/lib/utils";
-import type { Conversation } from "../utils/types";
+import { Icons } from "@/components/icons.tsx";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar.tsx";
+import { Badge } from "@/components/ui/badge.tsx";
+import { Input } from "@/components/ui/input.tsx";
+import { cn } from "@/lib/utils.ts";
+import type { Conversation } from "../utils/types.ts";
 
 const statusDotColor = {
 	online: "bg-green-500",
@@ -109,7 +109,7 @@ export function ConversationList({
 										"border-background absolute right-0 bottom-0 inline-flex h-3 w-3 rounded-full border-2",
 										statusDotColor[conversation.status],
 									)}
-									aria-label={
+									data-status={
 										conversation.status === "online" ? "Online" : "Offline"
 									}
 								/>

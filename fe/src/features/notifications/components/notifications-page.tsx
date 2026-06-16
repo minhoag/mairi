@@ -1,10 +1,15 @@
 import { useRouter } from "@tanstack/react-router";
-import { Icons } from "@/components/icons";
-import PageContainer from "@/components/layout/page-container";
-import { Button } from "@/components/ui/button";
-import { NotificationCard } from "@/components/ui/notification-card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { useNotificationStore } from "../utils/store";
+import { Icons } from "@/components/icons.tsx";
+import PageContainer from "@/components/layout/page-container.tsx";
+import { Button } from "@/components/ui/button.tsx";
+import { NotificationCard } from "@/components/ui/notification-card.tsx";
+import {
+	Tabs,
+	TabsContent,
+	TabsList,
+	TabsTrigger,
+} from "@/components/ui/tabs.tsx";
+import { useNotificationStore } from "../utils/store.ts";
 
 const actionRoutes: Record<string, string> = {
 	view: "/dashboard/overview",

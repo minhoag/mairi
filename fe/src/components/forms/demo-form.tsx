@@ -3,12 +3,17 @@ import { format } from "date-fns";
 import * as React from "react";
 import type { DateRange } from "react-day-picker";
 import * as z from "zod";
-import { Icons } from "@/components/icons";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Calendar } from "@/components/ui/calendar";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Checkbox } from "@/components/ui/checkbox";
+import { Icons } from "@/components/icons.tsx";
+import { Badge } from "@/components/ui/badge.tsx";
+import { Button } from "@/components/ui/button.tsx";
+import { Calendar } from "@/components/ui/calendar.tsx";
+import {
+	Card,
+	CardContent,
+	CardHeader,
+	CardTitle,
+} from "@/components/ui/card.tsx";
+import { Checkbox } from "@/components/ui/checkbox.tsx";
 import {
 	Command,
 	CommandEmpty,
@@ -16,25 +21,25 @@ import {
 	CommandInput,
 	CommandItem,
 	CommandList,
-} from "@/components/ui/command";
-import { FieldDescription } from "@/components/ui/field";
-import { Input } from "@/components/ui/input";
+} from "@/components/ui/command.tsx";
+import { FieldDescription } from "@/components/ui/field.tsx";
+import { Input } from "@/components/ui/input.tsx";
 import {
 	InputOTP,
 	InputOTPGroup,
 	InputOTPSeparator,
 	InputOTPSlot,
-} from "@/components/ui/input-otp";
-import { Label } from "@/components/ui/label";
+} from "@/components/ui/input-otp.tsx";
+import { Label } from "@/components/ui/label.tsx";
 import {
 	Popover,
 	PopoverContent,
 	PopoverTrigger,
-} from "@/components/ui/popover";
-import { Separator } from "@/components/ui/separator";
-import { useAppForm, useFormFields } from "@/components/ui/tanstack-form";
-import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
-import { cn } from "@/lib/utils";
+} from "@/components/ui/popover.tsx";
+import { Separator } from "@/components/ui/separator.tsx";
+import { useAppForm, useFormFields } from "@/components/ui/tanstack-form.tsx";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group.tsx";
+import { cn } from "@/lib/utils.ts";
 
 // Schema (form-level safety net — onSubmit catches anything field-level missed)
 const demoFormSchema = z.object({

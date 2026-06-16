@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import type * as React from "react";
-import { Icons } from "@/components/icons";
+import { Icons } from "@/components/icons.tsx";
 import {
 	Infobar,
 	InfobarContent,
@@ -9,7 +9,7 @@ import {
 	InfobarHeader,
 	InfobarTrigger,
 	useInfobar,
-} from "@/components/ui/infobar";
+} from "@/components/ui/infobar.tsx";
 
 // Default/fallback data when no content is set
 const defaultData = {

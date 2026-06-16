@@ -3,7 +3,7 @@ import { create } from "zustand";
 import type {
 	NotificationAction,
 	NotificationStatus,
-} from "@/components/ui/notification-card";
+} from "@/components/ui/notification-card.tsx";
 
 export type Notification = {
 	id: string;

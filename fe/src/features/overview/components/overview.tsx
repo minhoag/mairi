@@ -1,7 +1,7 @@
-import { Icons } from "@/components/icons";
-import PageContainer from "@/components/layout/page-container";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Icons } from "@/components/icons.tsx";
+import PageContainer from "@/components/layout/page-container.tsx";
+import { Badge } from "@/components/ui/badge.tsx";
+import { Button } from "@/components/ui/button.tsx";
 import {
 	Card,
 	CardAction,
@@ -9,12 +9,17 @@ import {
 	CardFooter,
 	CardHeader,
 	CardTitle,
-} from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { AreaGraph } from "./area-graph";
-import { BarGraph } from "./bar-graph";
-import { PieGraph } from "./pie-graph";
-import { RecentSales } from "./recent-sales";
+} from "@/components/ui/card.tsx";
+import {
+	Tabs,
+	TabsContent,
+	TabsList,
+	TabsTrigger,
+} from "@/components/ui/tabs.tsx";
+import { AreaGraph } from "./area-graph.tsx";
+import { BarGraph } from "./bar-graph.tsx";
+import { PieGraph } from "./pie-graph.tsx";
+import { RecentSales } from "./recent-sales.tsx";
 
 export default function OverViewPage() {
 	return (

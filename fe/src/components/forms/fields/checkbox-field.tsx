@@ -1,13 +1,13 @@
 import { useStore } from "@tanstack/react-form";
-import { Checkbox } from "@/components/ui/checkbox";
-import { FieldDescription, FieldLabel } from "@/components/ui/field";
+import { Checkbox } from "@/components/ui/checkbox.tsx";
+import { FieldDescription, FieldLabel } from "@/components/ui/field.tsx";
 import {
 	createFormField,
 	FormField,
 	FormFieldError,
 	FormFieldSet,
 	useFieldContext,
-} from "@/components/ui/form-context";
+} from "@/components/ui/form-context.tsx";
 
 interface CheckboxFieldProps {
 	label: string;

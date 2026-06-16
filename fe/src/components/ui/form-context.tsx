@@ -30,8 +30,8 @@ import {
 	FieldError as DefaultFieldError,
 	FieldSet as DefaultFieldSet,
 	type fieldVariants,
-} from "@/components/ui/field";
-import { cn } from "@/lib/utils";
+} from "@/components/ui/field.tsx";
+import { cn } from "@/lib/utils.ts";
 
 // ---------------------------------------------------------------------------
 // 1. Contexts

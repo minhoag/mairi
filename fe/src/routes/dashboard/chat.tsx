@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import ChatViewPage from "@/features/chat/components/chat-view-page";
+import ChatViewPage from "@/features/chat/components/chat-view-page.tsx";
 
 export const Route = createFileRoute("/dashboard/chat")({
 	head: () => ({ meta: [{ title: "Dashboard: Chat" }] }),

@@ -1,14 +1,14 @@
 import { useStore } from "@tanstack/react-form";
-import { FieldDescription, FieldLabel } from "@/components/ui/field";
+import { FieldDescription, FieldLabel } from "@/components/ui/field.tsx";
 import {
 	createFormField,
 	FormField,
 	FormFieldError,
 	FormFieldSet,
 	useFieldContext,
-} from "@/components/ui/form-context";
-import { Input } from "@/components/ui/input";
-import { Spinner } from "@/components/ui/spinner";
+} from "@/components/ui/form-context.tsx";
+import { Input } from "@/components/ui/input.tsx";
+import { Spinner } from "@/components/ui/spinner.tsx";
 
 interface TextFieldProps
 	extends Omit<React.ComponentProps<"input">, "value" | "onChange" | "onBlur"> {

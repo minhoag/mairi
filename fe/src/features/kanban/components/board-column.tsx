@@ -1,9 +1,9 @@
-import { Icons } from "@/components/icons";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { KanbanColumn, KanbanColumnHandle } from "@/components/ui/kanban";
-import type { Task } from "../utils/store";
-import { TaskCard } from "./task-card";
+import { Icons } from "@/components/icons.tsx";
+import { Badge } from "@/components/ui/badge.tsx";
+import { Button } from "@/components/ui/button.tsx";
+import { KanbanColumn, KanbanColumnHandle } from "@/components/ui/kanban.tsx";
+import type { Task } from "../utils/store.ts";
+import { TaskCard } from "./task-card.tsx";
 
 const COLUMN_TITLES: Record<string, string> = {
 	backlog: "Backlog",

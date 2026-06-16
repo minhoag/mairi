@@ -4,13 +4,13 @@ import Dropzone, {
 	type FileRejection,
 } from "react-dropzone";
 import { toast } from "sonner";
-import { Icons } from "@/components/icons";
+import { Icons } from "@/components/icons.tsx";
 
-import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { useControllableState } from "@/hooks/use-controllable-state";
-import { cn, formatBytes } from "@/lib/utils";
+import { Button } from "@/components/ui/button.tsx";
+import { Progress } from "@/components/ui/progress.tsx";
+import { ScrollArea } from "@/components/ui/scroll-area.tsx";
+import { useControllableState } from "@/hooks/use-controllable-state.tsx";
+import { cn, formatBytes } from "@/lib/utils.ts";
 
 export interface FileUploaderProps
 	extends React.HTMLAttributes<HTMLDivElement> {

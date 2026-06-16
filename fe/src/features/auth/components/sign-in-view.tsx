@@ -1,8 +1,8 @@
 import { Link } from "@tanstack/react-router";
-import { buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import { InteractiveGridPattern } from "./interactive-grid";
-import UserAuthForm from "./user-auth-form";
+import { buttonVariants } from "@/components/ui/button.tsx";
+import { cn } from "@/lib/utils.ts";
+import { InteractiveGridPattern } from "./interactive-grid.tsx";
+import UserAuthForm from "./user-auth-form.tsx";
 
 export default function SignInViewPage() {
 	return (
@@ -20,6 +20,8 @@ export default function SignInViewPage() {
 				<div className="absolute inset-0 bg-sidebar" />
 				<div className="text-sidebar-foreground relative z-20 flex items-center text-lg font-medium">
 					<svg
+						role="img"
+						aria-label="Logo"
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 24 24"
 						fill="none"

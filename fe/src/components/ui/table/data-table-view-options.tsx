@@ -1,8 +1,8 @@
 import { CaretSortIcon, CheckIcon } from "@radix-ui/react-icons";
 import type { Table } from "@tanstack/react-table";
 import * as React from "react";
-import { Icons } from "@/components/icons";
-import { Button } from "@/components/ui/button";
+import { Icons } from "@/components/icons.tsx";
+import { Button } from "@/components/ui/button.tsx";
 import {
 	Command,
 	CommandEmpty,
@@ -10,13 +10,13 @@ import {
 	CommandInput,
 	CommandItem,
 	CommandList,
-} from "@/components/ui/command";
+} from "@/components/ui/command.tsx";
 import {
 	Popover,
 	PopoverContent,
 	PopoverTrigger,
-} from "@/components/ui/popover";
-import { cn } from "@/lib/utils";
+} from "@/components/ui/popover.tsx";
+import { cn } from "@/lib/utils.ts";
 
 interface DataTableViewOptionsProps<TData> {
 	table: Table<TData>;

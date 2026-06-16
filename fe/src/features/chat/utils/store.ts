@@ -1,7 +1,7 @@
 import { create } from "zustand";
-import { initialConversations } from "./data";
+import { initialConversations } from "./data.ts";
 // import { persist } from 'zustand/middleware';
-import type { Attachment, Conversation, Message } from "./types";
+import type { Attachment, Conversation, Message } from "./types.ts";
 
 type ReplyCursorState = Record<string, number>;
 
@@ -45,7 +45,7 @@ export const useChatStore = create<ChatState>()(
 				minute: "2-digit",
 			});
 			const outgoing: Message = {
-				id: "outgoing-" + Date.now().toString(),
+				id: `outgoing-${Date.now().toString()}`,
 				sender: "user",
 				author: "You",
 				text: text.trim(),

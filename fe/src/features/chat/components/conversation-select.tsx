@@ -1,5 +1,5 @@
-import { Badge } from "@/components/ui/badge";
-import type { Conversation } from "../utils/types";
+import { Badge } from "@/components/ui/badge.tsx";
+import type { Conversation } from "../utils/types.ts";
 
 interface ConversationSelectProps {
 	conversations: Conversation[];

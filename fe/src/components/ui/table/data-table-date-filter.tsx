@@ -1,17 +1,17 @@
 import type { Column } from "@tanstack/react-table";
 import * as React from "react";
 import type { DateRange } from "react-day-picker";
-import { Icons } from "@/components/icons";
+import { Icons } from "@/components/icons.tsx";
 
-import { Button } from "@/components/ui/button";
-import { Calendar } from "@/components/ui/calendar";
+import { Button } from "@/components/ui/button.tsx";
+import { Calendar } from "@/components/ui/calendar.tsx";
 import {
 	Popover,
 	PopoverContent,
 	PopoverTrigger,
-} from "@/components/ui/popover";
-import { Separator } from "@/components/ui/separator";
-import { formatDate } from "@/lib/format";
+} from "@/components/ui/popover.tsx";
+import { Separator } from "@/components/ui/separator.tsx";
+import { formatDate } from "@/lib/format.ts";
 
 type DateSelection = Date[] | DateRange;
 

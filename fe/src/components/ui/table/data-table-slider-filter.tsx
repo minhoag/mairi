@@ -1,17 +1,17 @@
 import type { Column } from "@tanstack/react-table";
 import * as React from "react";
-import { Icons } from "@/components/icons";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Icons } from "@/components/icons.tsx";
+import { Button } from "@/components/ui/button.tsx";
+import { Input } from "@/components/ui/input.tsx";
+import { Label } from "@/components/ui/label.tsx";
 import {
 	Popover,
 	PopoverContent,
 	PopoverTrigger,
-} from "@/components/ui/popover";
-import { Separator } from "@/components/ui/separator";
-import { Slider } from "@/components/ui/slider";
-import { cn } from "@/lib/utils";
+} from "@/components/ui/popover.tsx";
+import { Separator } from "@/components/ui/separator.tsx";
+import { Slider } from "@/components/ui/slider.tsx";
+import { cn } from "@/lib/utils.ts";
 
 interface Range {
 	min: number;

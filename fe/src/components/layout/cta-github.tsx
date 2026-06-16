@@ -1,5 +1,5 @@
-import { Icons } from "@/components/icons";
-import { Button } from "@/components/ui/button";
+import { Icons } from "@/components/icons.tsx";
+import { Button } from "@/components/ui/button.tsx";
 
 export default function CtaGithub() {
 	return (

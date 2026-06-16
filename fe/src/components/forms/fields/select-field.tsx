@@ -1,19 +1,19 @@
 import { useStore } from "@tanstack/react-form";
-import { FieldDescription, FieldLabel } from "@/components/ui/field";
+import { FieldDescription, FieldLabel } from "@/components/ui/field.tsx";
 import {
 	createFormField,
 	FormField,
 	FormFieldError,
 	FormFieldSet,
 	useFieldContext,
-} from "@/components/ui/form-context";
+} from "@/components/ui/form-context.tsx";
 import {
 	Select,
 	SelectContent,
 	SelectItem,
 	SelectTrigger,
 	SelectValue,
-} from "@/components/ui/select";
+} from "@/components/ui/select.tsx";
 
 type Option = { value: string; label: string };
 

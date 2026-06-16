@@ -1,8 +1,8 @@
-import { Icons } from "@/components/icons";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import type { Conversation } from "../utils/types";
+import { Icons } from "@/components/icons.tsx";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar.tsx";
+import { Button } from "@/components/ui/button.tsx";
+import { cn } from "@/lib/utils.ts";
+import type { Conversation } from "../utils/types.ts";
 
 const statusDotColor = {
 	online: "bg-green-500",
@@ -28,7 +28,9 @@ export function ChatHeader({ conversation }: ChatHeaderProps) {
 							"border-background absolute right-0 bottom-0 inline-flex h-3 w-3 rounded-full border-2 sm:h-3.5 sm:w-3.5",
 							statusDotColor[conversation.status],
 						)}
-						aria-label={conversation.status === "online" ? "Online" : "Offline"}
+						data-status={
+							conversation.status === "online" ? "Online" : "Offline"
+						}
 					/>
 				</div>
 				<div>

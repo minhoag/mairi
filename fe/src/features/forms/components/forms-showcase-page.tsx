@@ -1,4 +1,4 @@
-import MultiStepProductForm from "./multi-step-product-form";
+import MultiStepProductForm from "./multi-step-product-form.tsx";
 
 export default function FormsShowcasePage() {
 	return (

@@ -25,8 +25,8 @@ import {
 	SwitchField,
 	TextareaField,
 	TextField,
-} from "@/components/forms/fields";
-import { Button, type buttonVariants } from "@/components/ui/button";
+} from "@/components/forms/fields/index.tsx";
+import { Button, type buttonVariants } from "@/components/ui/button.tsx";
 import {
 	FieldContent,
 	FieldDescription,
@@ -35,13 +35,13 @@ import {
 	FieldLegend,
 	FieldSeparator,
 	FieldTitle,
-} from "@/components/ui/field";
+} from "@/components/ui/field.tsx";
 import {
 	InputGroup,
 	InputGroupAddon,
 	InputGroupInput,
-} from "@/components/ui/input-group";
-import { cn } from "@/lib/utils";
+} from "@/components/ui/input-group.tsx";
+import { cn } from "@/lib/utils.ts";
 import {
 	FormField,
 	FormFieldError,
@@ -49,7 +49,7 @@ import {
 	fieldContext,
 	formContext,
 	useFormContext,
-} from "./form-context";
+} from "./form-context.tsx";
 
 // ---------------------------------------------------------------------------
 // Form-level components (used as form.ComponentName)
@@ -192,7 +192,7 @@ const { useAppForm, withForm, withFieldGroup } = createFormHook({
 // Type-safe field names — useFormFields
 // ---------------------------------------------------------------------------
 
-import type { WithTypedName } from "./form-context";
+import type { WithTypedName } from "./form-context.tsx";
 
 /**
  * Returns all composed field components with type-safe `name` props.
@@ -245,7 +245,7 @@ export type {
 	FieldListenerConfig,
 	FieldValidatorConfig,
 	WithTypedName,
-} from "./form-context";
+} from "./form-context.tsx";
 export {
 	createFormField,
 	FormErrors,
@@ -257,5 +257,5 @@ export {
 	typedField,
 	useFieldContext,
 	useFormContext,
-} from "./form-context";
+} from "./form-context.tsx";
 export { useAppForm, useFormFields, withFieldGroup, withForm };

@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Icons } from "@/components/icons";
-import PageContainer from "@/components/layout/page-container";
-import { Badge } from "@/components/ui/badge";
+import { Icons } from "@/components/icons.tsx";
+import PageContainer from "@/components/layout/page-container.tsx";
+import { Badge } from "@/components/ui/badge.tsx";
 import {
 	Card,
 	CardAction,
@@ -9,11 +9,11 @@ import {
 	CardFooter,
 	CardHeader,
 	CardTitle,
-} from "@/components/ui/card";
-import { AreaGraph } from "@/features/overview/components/area-graph";
-import { BarGraph } from "@/features/overview/components/bar-graph";
-import { PieGraph } from "@/features/overview/components/pie-graph";
-import { RecentSales } from "@/features/overview/components/recent-sales";
+} from "@/components/ui/card.tsx";
+import { AreaGraph } from "@/features/overview/components/area-graph.tsx";
+import { BarGraph } from "@/features/overview/components/bar-graph.tsx";
+import { PieGraph } from "@/features/overview/components/pie-graph.tsx";
+import { RecentSales } from "@/features/overview/components/recent-sales.tsx";
 
 export const Route = createFileRoute("/dashboard/overview")({
 	component: OverviewPage,

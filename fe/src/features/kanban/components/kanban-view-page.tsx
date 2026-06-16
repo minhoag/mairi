@@ -1,6 +1,6 @@
-import PageContainer from "@/components/layout/page-container";
-import { KanbanBoard } from "./kanban-board";
-import NewTaskDialog from "./new-task-dialog";
+import PageContainer from "@/components/layout/page-container.tsx";
+import { KanbanBoard } from "./kanban-board.tsx";
+import NewTaskDialog from "./new-task-dialog.tsx";
 
 export default function KanbanViewPage() {
 	return (

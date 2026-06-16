@@ -1,5 +1,5 @@
-import { InfoButton } from "@/components/ui/info-button";
-import type { InfobarContent } from "@/components/ui/infobar";
+import { InfoButton } from "@/components/ui/info-button.tsx";
+import type { InfobarContent } from "@/components/ui/infobar.tsx";
 
 interface HeadingProps {
 	title: string;

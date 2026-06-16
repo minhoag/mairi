@@ -1,11 +1,11 @@
 import { z } from "zod";
 
-import { dataTableConfig } from "@/config/data-table";
+import { dataTableConfig } from "@/config/data-table.ts";
 
 import type {
 	ExtendedColumnFilter,
 	ExtendedColumnSort,
-} from "@/types/data-table";
+} from "@/types/data-table.ts";
 
 const sortingItemSchema = z.object({
 	id: z.string(),

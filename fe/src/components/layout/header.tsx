@@ -1,10 +1,10 @@
-import { NotificationCenter } from "@/features/notifications/components/notification-center";
-import { Breadcrumbs } from "../breadcrumbs";
-import SearchInput from "../search-input";
-import { ThemeModeToggle } from "../themes/theme-mode-toggle";
-import { Separator } from "../ui/separator";
-import { SidebarTrigger } from "../ui/sidebar";
-import CtaGithub from "./cta-github";
+import { NotificationCenter } from "@/features/notifications/components/notification-center.tsx";
+import { Breadcrumbs } from "../breadcrumbs.tsx";
+import SearchInput from "../search-input.tsx";
+import { ThemeModeToggle } from "../themes/theme-mode-toggle.tsx";
+import { Separator } from "../ui/separator.tsx";
+import { SidebarTrigger } from "../ui/sidebar.tsx";
+import CtaGithub from "./cta-github.tsx";
 
 export default function Header() {
 	return (
