@@ -17,18 +17,19 @@ def create_user(
     return service.create_user(user_in)
 
 
+# TODO: add check permission, only admin can query all users
 @router.get("/")
-def list_users(
+def get_all_users(
     db: Session = Depends(get_db),
 ):
     service = UserService(session=db, user=None)
-    return service.list_users()
+    return service.get_all_users()
 
 
 @router.get("/{user_id}")
-def get_user(
+def get_one_user(
     user_id: str,
     db: Session = Depends(get_db),
 ):
     service = UserService(session=db, user=None)
-    return service.get_user(user_id)
+    return service.get_one_user(user_id)

@@ -1,0 +1,133 @@
+timestamp,label,confidence,depth_m,danger_level,x1,y1,x2,y2,image_saved
+2026-06-20 13:04:29,alligator crack,0.643,-1.00,LOW,0,218,238,378,dataset_collection/uncertain/alligator crack/1781953469.jpg
+2026-06-20 13:04:41,alligator crack,0.566,-1.00,LOW,376,385,639,497,dataset_collection/uncertain/alligator crack/1781953481.jpg
+2026-06-20 13:04:44,longitudinal crack,0.528,-1.00,LOW,124,330,289,488,
+2026-06-20 13:04:44,longitudinal crack,0.648,-1.00,LOW,76,400,136,442,
+2026-06-20 13:04:44,longitudinal crack,0.549,-1.00,LOW,159,329,298,467,
+2026-06-20 13:04:44,longitudinal crack,0.486,-1.00,LOW,9,414,99,477,
+2026-06-20 13:04:44,longitudinal crack,0.465,-1.00,LOW,141,325,294,478,
+2026-06-20 13:04:44,longitudinal crack,0.499,-1.00,LOW,155,346,291,497,
+2026-06-20 13:04:45,longitudinal crack,0.554,-1.00,LOW,164,361,231,406,
+2026-06-20 13:04:45,longitudinal crack,0.539,-1.00,LOW,168,341,299,497,
+2026-06-20 13:04:45,longitudinal crack,0.493,-1.00,LOW,126,382,214,440,
+2026-06-20 13:04:45,longitudinal crack,0.486,-1.00,LOW,162,347,298,506,
+2026-06-20 13:04:45,longitudinal crack,0.522,-1.00,LOW,12,412,177,523,
+2026-06-20 13:04:45,longitudinal crack,0.498,-1.00,LOW,165,355,290,507,
+2026-06-20 13:04:45,other corruption,0.584,-1.00,LOW,425,388,506,476,
+2026-06-20 13:04:45,longitudinal crack,0.672,-1.00,LOW,305,387,357,488,
+2026-06-20 13:04:46,longitudinal crack,0.656,-1.00,LOW,310,419,358,497,
+2026-06-20 13:04:46,longitudinal crack,0.575,-1.00,LOW,173,402,265,503,
+2026-06-20 13:04:46,longitudinal crack,0.735,0.45,MEDIUM,16,406,127,482,
+2026-06-20 13:04:46,longitudinal crack,0.550,-1.00,LOW,157,368,286,464,
+2026-06-20 13:04:46,longitudinal crack,0.723,-1.00,LOW,202,375,269,447,
+2026-06-20 13:04:46,longitudinal crack,0.751,-1.00,LOW,166,401,256,494,
+2026-06-20 13:04:46,longitudinal crack,0.592,-1.00,LOW,306,417,375,491,
+2026-06-20 13:04:47,longitudinal crack,0.541,-1.00,LOW,22,402,169,490,dataset_collection/uncertain/longitudinal crack/1781953487.jpg
+2026-06-20 13:04:47,longitudinal crack,0.615,-1.00,LOW,190,413,255,488,
+2026-06-20 13:04:47,longitudinal crack,0.535,-1.00,LOW,288,406,342,506,
+2026-06-20 13:04:47,longitudinal crack,0.494,-1.00,LOW,283,446,329,525,
+2026-06-20 13:04:47,longitudinal crack,0.451,-1.00,LOW,190,420,236,465,
+2026-06-20 13:04:47,alligator crack,0.544,-1.00,LOW,165,317,297,452,
+2026-06-20 13:04:48,alligator crack,0.604,-1.00,LOW,136,305,297,425,
+2026-06-20 13:04:48,longitudinal crack,0.541,-1.00,LOW,112,360,174,428,
+2026-06-20 13:04:48,longitudinal crack,0.770,-1.00,LOW,68,375,158,470,
+2026-06-20 13:04:48,longitudinal crack,0.663,-1.00,LOW,442,354,569,440,
+2026-06-20 13:04:48,longitudinal crack,0.540,-1.00,LOW,0,390,81,486,
+2026-06-20 13:04:48,longitudinal crack,0.466,-1.00,LOW,213,372,265,469,
+2026-06-20 13:04:48,longitudinal crack,0.547,-1.00,LOW,474,407,630,505,
+2026-06-20 13:04:48,longitudinal crack,0.529,-1.00,LOW,364,398,436,507,
+2026-06-20 13:04:49,longitudinal crack,0.498,-1.00,LOW,130,371,232,508,
+2026-06-20 13:04:49,longitudinal crack,0.482,-1.00,LOW,410,363,579,497,
+2026-06-20 13:04:49,longitudinal crack,0.587,-1.00,LOW,406,401,481,488,
+2026-06-20 13:04:50,alligator crack,0.551,-1.00,LOW,67,374,307,489,
+2026-06-20 13:04:51,longitudinal crack,0.581,-1.00,LOW,12,424,112,511,
+2026-06-20 13:04:51,longitudinal crack,0.508,-1.00,LOW,459,386,552,503,
+2026-06-20 13:04:52,alligator crack,0.557,-1.00,LOW,403,408,570,494,
+2026-06-20 13:04:52,other corruption,0.534,-1.00,LOW,115,410,186,484,
+2026-06-20 13:04:53,longitudinal crack,0.501,-1.00,LOW,457,390,564,500,
+2026-06-20 13:04:53,longitudinal crack,0.694,-1.00,LOW,247,344,311,459,dataset_collection/uncertain/longitudinal crack/1781953493.jpg
+2026-06-20 13:04:53,alligator crack,0.483,-1.00,LOW,386,381,591,492,
+2026-06-20 13:04:53,longitudinal crack,0.570,-1.00,LOW,100,397,190,479,
+2026-06-20 13:04:53,longitudinal crack,0.643,-1.00,LOW,224,365,281,474,
+2026-06-20 13:04:54,longitudinal crack,0.458,-1.00,LOW,373,364,435,480,
+2026-06-20 13:04:54,alligator crack,0.471,-1.00,LOW,452,388,615,517,
+2026-06-20 13:04:55,longitudinal crack,0.480,-1.00,LOW,47,430,134,506,
+2026-06-20 13:04:56,longitudinal crack,0.625,-1.00,LOW,98,360,234,479,
+2026-06-20 13:04:56,other corruption,0.599,-1.00,LOW,63,435,146,504,
+2026-06-20 13:04:56,alligator crack,0.483,-1.00,LOW,435,391,637,542,
+2026-06-20 13:04:56,alligator crack,0.694,-1.00,LOW,470,400,586,510,
+2026-06-20 13:04:56,alligator crack,0.583,-1.00,LOW,520,446,639,534,
+2026-06-20 13:04:57,longitudinal crack,0.714,-1.00,LOW,382,366,470,471,
+2026-06-20 13:04:57,longitudinal crack,0.455,-1.00,LOW,62,351,119,399,
+2026-06-20 13:04:57,longitudinal crack,0.476,-1.00,LOW,0,370,55,454,
+2026-06-20 13:04:57,longitudinal crack,0.709,-1.00,LOW,200,390,250,483,
+2026-06-20 13:04:58,longitudinal crack,0.460,-1.00,LOW,353,416,413,511,
+2026-06-20 13:04:58,other corruption,0.489,-1.00,LOW,520,416,607,479,
+2026-06-20 13:04:59,longitudinal crack,0.523,-1.00,LOW,180,425,227,513,dataset_collection/uncertain/longitudinal crack/1781953499.jpg
+2026-06-20 13:04:59,longitudinal crack,0.450,-1.00,LOW,0,411,84,486,
+2026-06-20 13:05:00,alligator crack,0.506,-1.00,LOW,293,391,587,556,
+2026-06-20 13:05:00,longitudinal crack,0.455,-1.00,LOW,15,402,99,457,
+2026-06-20 13:05:00,longitudinal crack,0.571,-1.00,LOW,182,391,245,503,
+2026-06-20 13:05:00,longitudinal crack,0.566,-1.00,LOW,73,402,146,459,
+2026-06-20 13:05:00,alligator crack,0.471,-1.00,LOW,392,367,579,536,
+2026-06-20 13:05:00,alligator crack,0.679,-1.00,LOW,162,397,630,553,
+2026-06-20 13:05:00,longitudinal crack,0.569,-1.00,LOW,19,470,102,530,
+2026-06-20 13:05:00,alligator crack,0.585,-1.00,LOW,244,395,582,534,
+2026-06-20 13:05:00,alligator crack,0.585,-1.00,LOW,446,438,583,544,
+2026-06-20 13:05:00,longitudinal crack,0.535,-1.00,LOW,78,403,141,477,
+2026-06-20 13:05:01,alligator crack,0.616,-1.00,LOW,176,389,636,545,
+2026-06-20 13:05:02,longitudinal crack,0.523,-1.00,LOW,222,323,298,407,
+2026-06-20 13:05:04,alligator crack,0.639,-1.00,LOW,397,277,495,361,
+2026-06-20 13:05:04,alligator crack,0.503,-1.00,LOW,301,350,632,493,
+2026-06-20 13:05:07,longitudinal crack,0.576,-1.00,LOW,98,381,209,436,dataset_collection/uncertain/longitudinal crack/1781953507.jpg
+2026-06-20 13:05:08,longitudinal crack,0.525,-1.00,LOW,157,331,248,387,
+2026-06-20 13:05:08,longitudinal crack,0.769,-1.00,LOW,130,332,247,403,
+2026-06-20 13:05:08,longitudinal crack,0.517,-1.00,LOW,30,352,234,467,
+2026-06-20 13:05:08,other corruption,0.666,-1.00,LOW,230,388,316,517,
+2026-06-20 13:05:08,longitudinal crack,0.575,-1.00,LOW,1,364,224,508,
+2026-06-20 13:05:09,longitudinal crack,0.757,-1.00,LOW,46,437,136,504,
+2026-06-20 13:05:09,longitudinal crack,0.472,-1.00,LOW,144,434,231,502,
+2026-06-20 13:05:10,longitudinal crack,0.480,-1.00,LOW,148,334,227,384,
+2026-06-20 13:05:10,longitudinal crack,0.641,-1.00,LOW,59,355,200,447,
+2026-06-20 13:05:10,longitudinal crack,0.777,14.95,LOW,0,401,118,491,
+2026-06-20 13:05:12,longitudinal crack,0.453,-1.00,LOW,45,454,112,499,
+2026-06-20 13:05:14,alligator crack,0.564,-1.00,LOW,274,331,453,438,dataset_collection/uncertain/alligator crack/1781953514.jpg
+2026-06-20 13:05:14,longitudinal crack,0.520,-1.00,LOW,98,333,226,412,
+2026-06-20 13:05:16,longitudinal crack,0.465,-1.00,LOW,61,278,172,392,
+2026-06-20 13:05:17,longitudinal crack,0.524,-1.00,LOW,236,246,293,322,
+2026-06-20 13:05:20,longitudinal crack,0.562,-1.00,LOW,162,235,270,327,dataset_collection/uncertain/longitudinal crack/1781953520.jpg
+2026-06-20 13:05:20,longitudinal crack,0.457,14.95,LOW,1,270,212,423,
+2026-06-20 13:05:22,longitudinal crack,0.451,14.95,LOW,1,176,186,316,
+2026-06-20 13:05:22,longitudinal crack,0.613,14.95,LOW,82,171,172,235,
+2026-06-20 13:05:24,alligator crack,0.480,-1.00,LOW,389,160,475,249,
+2026-06-20 13:05:27,longitudinal crack,0.542,-1.00,LOW,122,302,182,366,dataset_collection/uncertain/longitudinal crack/1781953527.jpg
+2026-06-20 13:05:30,longitudinal crack,0.498,-1.00,LOW,98,286,153,329,
+2026-06-20 13:05:30,longitudinal crack,0.614,-1.00,LOW,4,355,100,434,
+2026-06-20 13:05:31,other corruption,0.451,-1.00,LOW,384,301,593,481,
+2026-06-20 13:05:55,other corruption,0.480,-1.00,LOW,330,254,420,392,dataset_collection/uncertain/other corruption/1781953555.jpg
+2026-06-20 13:06:15,longitudinal crack,0.590,0.41,MEDIUM,85,462,160,547,dataset_collection/uncertain/longitudinal crack/1781953575.jpg
+2026-06-20 13:06:20,longitudinal crack,0.552,-1.00,LOW,117,374,212,463,
+2026-06-20 13:06:22,longitudinal crack,0.456,-1.00,LOW,43,423,130,495,dataset_collection/uncertain/longitudinal crack/1781953582.jpg
+2026-06-20 13:06:22,alligator crack,0.627,-1.00,LOW,388,434,544,507,
+2026-06-20 13:06:26,alligator crack,0.490,-1.00,LOW,67,416,227,496,
+2026-06-20 13:06:33,other corruption,0.458,-1.00,LOW,103,521,266,634,dataset_collection/uncertain/other corruption/1781953593.jpg
+2026-06-20 13:06:51,other corruption,0.687,-1.00,LOW,483,506,635,608,dataset_collection/uncertain/other corruption/1781953611.jpg
+2026-06-20 13:07:16,other corruption,0.456,-1.00,LOW,156,142,226,201,dataset_collection/uncertain/other corruption/1781953636.jpg
+2026-06-20 13:08:38,longitudinal crack,0.510,-1.00,LOW,308,192,349,241,dataset_collection/uncertain/longitudinal crack/1781953718.jpg
+2026-06-20 13:09:54,longitudinal crack,0.463,14.95,LOW,497,332,547,377,dataset_collection/uncertain/longitudinal crack/1781953794.jpg
+2026-06-20 13:09:57,longitudinal crack,0.460,7.47,MEDIUM,0,297,97,377,
+2026-06-20 13:09:59,longitudinal crack,0.450,14.95,LOW,470,272,565,381,
+2026-06-20 13:10:16,longitudinal crack,0.756,-1.00,LOW,78,303,164,370,
+2026-06-20 13:14:14,other corruption,0.584,14.95,LOW,448,127,604,300,dataset_collection/uncertain/other corruption/1781954054.jpg
+2026-06-20 13:15:15,longitudinal crack,0.540,14.95,LOW,9,163,223,303,dataset_collection/uncertain/longitudinal crack/1781954115.jpg
+2026-06-20 13:15:16,longitudinal crack,0.517,14.95,LOW,34,176,214,298,
+2026-06-20 13:18:13,other corruption,0.465,14.95,LOW,0,109,283,297,dataset_collection/uncertain/other corruption/1781954293.jpg
+2026-06-20 13:18:52,alligator crack,0.503,14.95,LOW,532,208,639,291,dataset_collection/uncertain/alligator crack/1781954332.jpg
+2026-06-20 13:20:05,alligator crack,0.552,-1.00,LOW,0,229,144,347,dataset_collection/uncertain/alligator crack/1781954405.jpg
+2026-06-20 13:20:05,alligator crack,0.461,-1.00,LOW,0,231,101,348,
+2026-06-20 13:20:06,longitudinal crack,0.525,7.47,LOW,584,352,636,406,
+2026-06-20 13:20:06,longitudinal crack,0.558,7.47,LOW,530,347,577,400,
+2026-06-20 13:20:19,other corruption,0.499,14.95,LOW,511,230,609,308,dataset_collection/uncertain/other corruption/1781954419.jpg
+2026-06-20 13:20:26,longitudinal crack,0.534,14.95,LOW,183,178,261,296,dataset_collection/uncertain/longitudinal crack/1781954426.jpg
+2026-06-20 13:23:29,longitudinal crack,0.586,9.97,MEDIUM,174,111,301,286,dataset_collection/uncertain/longitudinal crack/1781954609.jpg
+2026-06-20 13:23:47,longitudinal crack,0.481,14.95,LOW,486,127,610,294,dataset_collection/uncertain/longitudinal crack/1781954627.jpg

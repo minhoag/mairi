@@ -25,11 +25,11 @@ class UserService(Service):
         self._db.refresh(user)
         return SuccessResponse(data=user.model_dump(exclude={"password"}))
 
-    def list_users(self):
+    def get_all_users(self):
         users = self._db.exec(select(User)).all()
         return SuccessResponse(data=[u.model_dump(exclude={"password"}) for u in users])
 
-    def get_user(self, user_id: str):
+    def get_one_user(self, user_id: str):
         user = self._db.get(User, user_id)
         if user is None:
             return NotFoundResponse(message="User not found")
