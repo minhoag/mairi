@@ -12,6 +12,12 @@ class Service:
 
         return decorator
 
+    def get_bearer_token(self, authorization: str):
+        scheme, sep, token = authorization.partition(" ")
+        if scheme.lower() != "bearer" or not sep or not token:
+            return ""  # unauthorized
+        return token
+
     def check_permission(self) -> bool:
         if not self.user.is_admin:
             return True
