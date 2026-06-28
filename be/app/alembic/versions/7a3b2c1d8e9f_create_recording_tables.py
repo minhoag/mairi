@@ -48,7 +48,7 @@ def upgrade() -> None:
         op.f("ix_recording_data_run_id"), "recording", ["data_run_id"], unique=True
     )
     op.create_table(
-        "recordingsample",
+        "sample_data",
         sa.Column("id", sa.Integer(), nullable=False),
         sa.Column("recording_id", sqlmodel.sql.sqltypes.AutoString(), nullable=False),
         sa.Column("recorded_at", sa.DateTime(), nullable=False),
@@ -72,29 +72,58 @@ def upgrade() -> None:
         sa.PrimaryKeyConstraint("id"),
     )
     op.create_index(
-        "ix_recordingsample_recording_id",
-        "recordingsample",
+        "ix_sample_data_recording_id",
+        "sample_data",
         ["recording_id"],
         postgresql_using="btree",
     )
     op.create_index(
-        "ix_recordingsample_recorded_at",
-        "recordingsample",
+        "ix_sample_data_recorded_at",
+        "sample_data",
         ["recorded_at"],
         postgresql_using="btree",
     )
     op.create_index(
-        "ix_recordingsample_geom", "recordingsample", ["geom"], postgresql_using="gist"
+        "ix_sample_data_geom", "sample_data", ["geom"], postgresql_using="gist"
     )
     # ### end Alembic commands ###
 
 
 def downgrade() -> None:
     """Downgrade schema."""
-    op.drop_index("ix_recordingsample_geom", table_name="recordingsample")
-    op.drop_index("ix_recordingsample_recorded_at", table_name="recordingsample")
-    op.drop_index("ix_recordingsample_recording_id", table_name="recordingsample")
-    op.drop_table("recordingsample")
-    op.drop_index(op.f("ix_recording_data_run_id"), table_name="recording")
-    op.drop_table("recording")
+    bind = op.get_bind()
+    inspector = sa.inspect(bind)
+
+    if inspector.has_table("sample_data"):
+        indexes = inspector.get_indexes("sample_data")
+        index_names = [idx["name"] for idx in indexes]
+        if "ix_sample_data_geom" in index_names:
+            op.drop_index("ix_sample_data_geom", table_name="sample_data")
+        if "ix_sample_data_recorded_at" in index_names:
+            op.drop_index("ix_sample_data_recorded_at", table_name="sample_data")
+        if "ix_sample_data_recording_id" in index_names:
+            op.drop_index("ix_sample_data_recording_id", table_name="sample_data")
+        op.drop_table("sample_data")
+
+    if inspector.has_table("recordingsample"):
+        indexes = inspector.get_indexes("recordingsample")
+        index_names = [idx["name"] for idx in indexes]
+        if "ix_recordingsample_geom" in index_names:
+            op.drop_index("ix_recordingsample_geom", table_name="recordingsample")
+        if "ix_recordingsample_recorded_at" in index_names:
+            op.drop_index(
+                "ix_recordingsample_recorded_at", table_name="recordingsample"
+            )
+        if "ix_recordingsample_recording_id" in index_names:
+            op.drop_index(
+                "ix_recordingsample_recording_id", table_name="recordingsample"
+            )
+        op.drop_table("recordingsample")
+
+    if inspector.has_table("recording"):
+        indexes = inspector.get_indexes("recording")
+        index_names = [idx["name"] for idx in indexes]
+        if "ix_recording_data_run_id" in index_names:
+            op.drop_index("ix_recording_data_run_id", table_name="recording")
+        op.drop_table("recording")
     # ### end Alembic commands ###

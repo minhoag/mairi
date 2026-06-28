@@ -113,6 +113,7 @@ class Recording(RecordingBase, table=True):
 # RECORDING SAMPLES
 # geom column requires GeoAlchemy2: from geoalchemy2 import Geometry
 class RecordingSample(SQLModel, table=True):
+    __tablename__ = "sample_data"
     id: int | None = Field(default=None, primary_key=True)
     recording_id: str = Field(foreign_key="recording.id")
     recorded_at: datetime
